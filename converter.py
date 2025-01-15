@@ -2,7 +2,7 @@ import streamlit as st
 import time
 from utils import *
 
-st.set_page_config(page_title="SpiderSound - Extrator YT")
+st.set_page_config(page_title="SpiderSound - Extrator YT", page_icon='favicon.ico')
 
 # Título da aplicação
 st.markdown(
