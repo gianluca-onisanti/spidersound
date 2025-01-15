@@ -36,7 +36,7 @@ if st.button("Converter e Baixar"):
         songs = songs_text.splitlines()
         i = 0
         for song in songs:
-            placeholder.info(f'Baixando: {song}')
+            placeholder.info(f'Baixando: {song} . . .')
             download_audio(song)
             i+=1
 
