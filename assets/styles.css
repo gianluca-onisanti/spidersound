@@ -1,0 +1,76 @@
+[data-testid="stHeader"] {
+    background-color: var(--bg);
+}
+
+[data-testid="stWidgetLabel"] p {
+    font-weight: bolder !important;
+}
+
+button {
+    border-radius: 25px !important;
+    outline: none !important;
+    border: 1px solid #ffffff !important;
+    background-color: #051a1f !important;
+    transition: all 0.3s ease-in-out;
+}
+
+[data-testid="stTextAreaRootElement"] {
+    border-radius: 25px;
+}
+
+textarea {
+    border-radius: 25px;
+    outline: none !important;
+    border: 1px solid #ffffff !important;
+    background-color: #051a1f !important;
+    transition: all 0.3s ease-in-out;
+}
+
+textarea:focus {
+    color: red;
+    border: 1px solid red !important;
+    box-shadow: 0 0 10px #719ece;
+}
+
+.main {
+    background-color: #051a1f;
+}
+
+[data-testid="stHeaderActionElements"] {
+    display: none;
+}
+
+[data-testid="StyledFullScreenButton"] {
+    display: none;
+}
+
+.stButton > button {
+    display: block;
+    margin: 0 auto;
+    width: 50%; /* Ajuste a largura conforme necessário */
+}
+
+.stImage {
+    top: -185px;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-35.5%);
+}
+
+.header {
+    text-align: center;
+    -webkit-text-stroke: 5px black !important;
+    paint-order: stroke fill !important;
+    text-shadow: 2px 2px #000000;
+}
+
+.red-text {
+    color: red;
+}
+
+.gap {
+    margin-top: -20px;
+    text-align: center;
+    margin-bottom: 60px;
+}

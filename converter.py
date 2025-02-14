@@ -4,30 +4,27 @@ from utils import *
 
 st.set_page_config(page_title="SpiderSound - Extrator YT", page_icon='favicon.ico')
 
+with open('assets/styles.css', 'r') as f:
+    css = f.read()
+    st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
+
+st.image("assets/spidersound.png", width=506)
+
 # Título da aplicação
 st.markdown(
     """
-
-        <style>
-            .stButton>button {
-                display: block;
-                margin: 0 auto;
-                width: 50%; /* Ajuste a largura conforme necessário */
-            }
-        </style>
-
-        <h1 style='text-align: center;'>
-            <span style='color: red;'>Spider</span>Sound
+        <h1 class="header">
+            <span class="red-text">Spider</span>Sound
         </h1>
 
-        <h3 style='text-align: center;'>
-            Extrator de áudios do YouTube
+        <h3 class="header gap">
+            Extrator de Áudios do YouTube
         </h3>
     
     """, unsafe_allow_html=True)
 
 # Área para inserir as músicas
-songs_text = st.text_area("Digite o título das músicas (uma por linha):")
+songs_text = st.text_area("Digite a URL e/ou título das músicas (uma por linha):")
 
 # Botão para iniciar o download
 if st.button("Converter e Baixar"):
