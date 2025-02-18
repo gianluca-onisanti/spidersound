@@ -1,5 +1,21 @@
+[data-testid="stToolbar"] {
+    display: none;
+}
+
+[data-testid="stHeaderActionElements"] {
+    display: none;
+}
+
 [data-testid="stHeader"] {
     background-color: var(--bg);
+}
+
+[data-testid="stDecoration"] {
+    display: none;
+}
+
+[data-testid="stHeaderActionElements"] {
+    display: none;
 }
 
 [data-testid="stWidgetLabel"] p {
@@ -14,21 +30,42 @@ button {
     transition: all 0.3s ease-in-out;
 }
 
+button:hover {
+    border: 1px solid red !important;
+}
+
 [data-testid="stTextAreaRootElement"] {
     border-radius: 25px;
+}
+
+.signature {
+    position: absolute;
+    display: flex;
+    bottom: -25px;
+    right: 5px;
+}
+
+.signature p {
+    font-size: small;
+    font-style: italic;
 }
 
 textarea {
     border-radius: 25px;
     outline: none !important;
+    height: 200px !important;
     border: 1px solid #ffffff !important;
     background-color: #051a1f !important;
     transition: all 0.3s ease-in-out;
 }
 
-textarea:focus {
-    color: red;
+textarea:hover {
     border: 1px solid red !important;
+}
+
+textarea:focus {
+    border: 1px solid red !important;
+    color: red;
     box-shadow: 0 0 10px #719ece;
 }
 
@@ -47,7 +84,7 @@ textarea:focus {
 .stButton > button {
     display: block;
     margin: 0 auto;
-    width: 50%; /* Ajuste a largura conforme necessário */
+    width: 50%;
 }
 
 .stImage {
