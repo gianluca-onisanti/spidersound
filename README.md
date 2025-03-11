@@ -23,7 +23,7 @@ SpiderSound é um aplicativo em Python que utiliza Streamlit para criar uma inte
     streamlit run converter.py
     ```
 
-4. Você será redirecionado a seu navegador para a página do SpiderSound. Digite os títulos dos vídeos que deseja baixar (separe quebrando linhas com Enter ou com ;).
+4. Você será redirecionado a seu navegador para a página do SpiderSound. Digite os títulos dos vídeos que deseja baixar (separe quebrando linhas com Enter ou com ';').
 
 5. Clique em **"Converter e Baixar"**.
 
